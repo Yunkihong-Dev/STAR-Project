@@ -1,0 +1,530 @@
+@charset "UTF-8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd,
+	q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
+	th, td, article, aside, canvas, details, figcaption, figure, footer,
+	header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Pretendard';
+	font-size: 14px;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.87);
+	-webkit-text-size-adjust: none;
+}
+
+div {
+	display: block;
+}
+
+ul, ol, li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	-webkit-appearance: none;
+	border-radius: 0;
+	font-family: 'Pretendard';
+	outline-style: none;
+}
+
+.wrap, sub_top_wrap {
+    width: 100%;
+    background: #fff;
+}
+
+.wrap.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.sub_top_wrap {
+       height: 211px;
+    background: #388e3c;
+}
+
+.sub_top {
+       width: 1024px;
+    height: 211px;
+    margin: 0 auto;
+    padding-top: 72px;
+    border-radius: 0;
+        background: none;
+    position: relative;
+}
+
+.sub_top h2 {
+       display: block;
+    margin: 37px 0 0 31px;
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 72px;
+  transition: 0.3s;
+   background-color: red;
+   z-index:15;
+}
+
+header section {
+   position: relative;
+   width: 1024px;
+   height: 64px;
+   background: none;
+   margin: 0 auto;
+}
+
+header section h1 a {
+   display: block;
+   color :#EBEBEB;
+   font-size : 18px;
+}
+
+
+header section h1 {
+    position: absolute;
+    top: 7px;
+    left: 32px;
+    width: 96px;
+    height: 20px;
+    margin: 0;
+    background-size: 96px auto;
+}
+
+header section .btn_srch {
+   position: absolute;
+   border: none;
+   text-indent: -9999px;
+   top: 22px;
+   right: 396px;
+   z-index: 10;
+   width: 30px;
+   height: 30px;
+   background: url(//image.goodchoice.kr/images/web_v3/ico_srch_2.png) 50%
+      50% no-repeat;
+   background-size: 24px auto;
+}
+
+.gnb_pc {
+   display: inline-block;
+   position: absolute;
+   top: 15px;
+   right: 31px;
+   margin-top: 10px;
+}
+
+.gnb_pc {
+   width: auto;
+   text-align: right;
+}
+
+.gnb_pc li a {
+   display: inline-block;
+   font-size: 18px;
+   color: #fff;
+   letter-spacing: 0;
+}
+
+
+.gnb_pc li {
+   display: inline-block;
+   position: relative;
+   min-width: 53px;
+   min-height: 35px;
+   margin-left: 30px;
+   vertical-align: top;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #388e3c ;
+  /*transition: all 300ms ease;*/
+  
+}
+
+#menu.active {
+    position: fixed;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 210;
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+  
+} 
+
+.bannertext.textactive{
+
+   color: #388e3c;
+   
+}
+
+#bannertext.textactive2{
+
+color: #388e3c;
+
+}
+
+#content {
+	overflow: hidden;
+}
+
+.my_wrap {
+	padding-top: 54px;
+}
+
+.sub_wrap {
+	min-height: 390px;
+	width: 1024px !important;
+	margin: 0 auto 0 auto;
+	padding-bottom: 50px;
+}
+
+.sub_wrap nav {
+	display: block;
+	float: left;
+	width: 238px;
+	padding-left: 31px;
+}
+
+.sub_wrap nav ul li {
+	margin-bottom: 26px;
+}
+
+.sub_wrap nav ul li a {
+	display: block;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.56);
+}
+
+.sub_wrap nav ul li a.active {
+	font-size: 18px;
+	font-weight: bold;
+	color: #388e3c;
+}
+
+.sub_wrap .align_rt {
+	float: right;
+	width: 724px;
+	margin-right: 31px;
+}
+
+.mypage {
+	border-top: none;
+	padding: 0;
+	font-size: 18px;
+	overflow: hidden;
+}
+
+.top_area {
+	position: relative;
+}
+
+.mypage strong {
+	padding: 0 0 43px 0;
+	display: block;
+	color: #388e3c;
+}
+
+.login_info {
+	position: relative;
+	text-align: left;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.login_info div {
+	width: 128px;
+	height: 128px;
+	margin: 0 0 26px 0;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 100%;
+}
+
+.login_info div img {
+	width: 100%;
+	height: 100%;
+}
+
+img {
+	border: 0;
+}
+
+.login_info p {
+	padding-bottom: 42px;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.32);
+}
+
+.mypage .pw_input {
+	position: relative;
+}
+
+.mypage pw_input__title {
+	padding-right: 240px;
+}
+
+.mypage .pw_input__title b {
+	width: 120px;
+	float: left;
+}
+
+.mypage b {
+	margin-bottom: 12px;
+	display: block;
+	font-weight: normal;
+}
+
+.mypage .pw_input__title .title__uinfo {
+	color: rgba(0, 0, 0, 0.56);
+	float: left;
+}
+
+.mypage .pw_input__title:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.mypage .pw_input section {
+	position: relative;
+	margin: 0 0 33px 0;
+	padding-right: 110px;
+}
+
+.mypage .inp_wrap {
+	width: 374px;
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+
+.inp_wrap {
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	padding: 8px 14px 8px 16px;
+	position: relative;
+	height: 48px;
+	border-radius: 4px;
+}
+
+.inp_wrap input {
+	border: none;
+	background: none;
+	width: 100%;
+	margin-top: 5px;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.56);
+	height: 20px;
+	line-height: 1;
+}
+
+/* 딴거할래요 버튼 */
+.mypage .pw_input section .btn_confirm.active {
+	background: #ff0055;
+}
+
+.mypage .pw_input section .btn_confirm {
+	right: auto;
+	left: 384px;
+}
+
+.mypage .pw_input section .btn_confirm {
+	position: absolute;
+	top: 0;
+	width: 100px;
+	height: 44px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff;
+}
+
+button {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	font: normal 400 14px/16px 'Pretendard';
+}
+
+.mypage .pw_input .pw_input__btns-wrap {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 50px;
+	padding-right: 110px;
+}
+
+.mypage .pw_input .pw_input__btns-wrap .btns-wrap__edit-btn {
+	border: solid 1px #ccc;
+	display: block;
+}
+
+.mypage .pw_input__btns-wrap button {
+	display: none;
+	width: 144px;
+	float: left;
+	margin-right: 5%;
+	height: 42px;
+	border-radius: 4px;
+	font-size: 15px;
+	color: rgba(0, 0, 0, 0.87);
+	text-align: center;
+	box-sizing: border-box;
+	vertical-align: top;
+	background-color: #fff;
+}
+
+.mypage .pw_input__btns-wrap .btns-wrap__submit-btn {
+	border: none;
+	color: #fff;
+	background: linear-gradient(to bottom, #388e3c 0%, #388e3c 100%);
+}
+
+.pw_input .pw_input__btns-wrap .btns-wrap__cancel-btn {
+	border: solid 1px #ccc;
+}
+
+.mypage .pw_input__btns-wrap button:last-child {
+	margin-right: 0px;
+}
+
+.mypage .pw_input__btns-wrap .btns-wrap__cancel-btn {
+	background: none;
+}
+
+.mypage .pw_input__title .title__uinfo {
+	color: rgba(0, 0, 0, 0.56);
+	float: left;
+}
+
+.mypage .pw_input__title:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.phone_confirm {
+	margin-top: 16px;
+}
+
+.mypage .safety_txt {
+	clear: both;
+}
+
+.safety_txt {
+	padding-bottom: 14px;
+	font-size: 14px;
+	display: block;
+	color: rgba(0, 0, 0, 0.56);
+}
+
+.mypage .pw_input__title:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.formlast {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.bot_btn {
+	height: 56px;
+	margin-top: 48px;
+	border-top: 1px solid rgba(0, 0, 0, 0.08);
+	background: none;
+	text-align: left;
+	padding-right: 16px;
+}
+
+.bot_btn p {
+	display: inline-block;
+	padding-top: 23px;
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.56);
+}
+
+.bot_btn button {
+	height: auto;
+	margin-top: 0;
+	padding: 0 8px;
+	border: none;
+	background: none;
+	font-size: 16px;
+	width: 80px;
+	color: rgba(0, 0, 0, 0.87);
+	text-align: center;
+	text-decoration: underline;
+}
+
+.bot_btn button a {
+	color: rgba(0, 0, 0, 0.87);
+	text-decoration: underline;
+}
+
+#pname {
+	display:block;
+	color: red;
+	font-size: 15px;
+}
+#paddress {
+	display:block;
+	color: red;
+	font-size: 15px;
+}
+#pphone {
+	display:block;
+	color: red;
+	font-size: 15px;
+}
+#page {
+	display:block;
+	color: red;
+	font-size: 15px;
+}
+#pgender {
+	display:block;
+	color: red;
+	font-size: 15px;
+}
+#pemail {
+	display:block;
+	color: red;
+	font-size: 15px;
+}
+#pgender {
+	display:block;
+	color: red;
+	font-size: 15px;
+}

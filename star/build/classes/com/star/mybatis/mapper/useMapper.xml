@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="use">
+	<select id="selectcarelist" resultType="useDTO">
+	select use_number,use_useddate, use_status, user_name,target_number,u1.user_number 
+	 from tbl_use u1 join tbl_user u2 on target_number = u2.user_number where u1.user_number =  #{userNumber} limit #{offset},#{rowCount}
+	</select>
+	<select id="selectuselist" resultType="useDTO">
+	select use_number,use_useddate, use_status, user_name,target_number,u1.user_number  
+	from tbl_use u1 join tbl_user u2 on u1.user_number  = u2.user_number where u1.target_number = #{userNumber} limit #{offset},#{rowCount}
+	</select>
+	<delete id="delete">
+	delete from tbl_use where use_number= #{useNumber}
+	</delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

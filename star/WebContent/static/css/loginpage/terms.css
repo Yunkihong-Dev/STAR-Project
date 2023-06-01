@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+* {
+    outline: 0;
+}
+
+html, body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: rgba(0,0,0,0.87);
+    -webkit-text-size-adjust: none;
+}
+
+.wrap {
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wrap.show, footer.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a, input, button, div, li, textarea, form, label, select {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+textarea, button, input, select {
+    border-radius: 0;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+
+.layer_fix {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 400;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    background: #fff;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(0,0,0,0.87);
+    touch-action: none;
+}
+
+.layer_fix section {
+    width: 336px;
+    margin: 100px auto 0 auto;
+}
+
+.layer_fix .fix_title {
+    display: block !important;
+    margin-bottom: 16px;
+}
+
+.fix_title {
+	position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    border-bottom: none;
+    font-size: 18px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.layer_fix .fix_title strong {
+	display: block;
+	line-height: 44px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.terms_agree {
+    margin-top: 20px;
+}
+
+.terms_agree p {
+	position: relative;
+    margin-bottom: 25px;
+}
+
+.terms_agree .all_check {
+    font-weight: bold;
+}
+
+label {
+    cursor: pointer;
+}
+
+.terms_agree p label {
+    display: inline-block;
+    position: relative;
+}
+
+.terms_agree input {
+    margin: 0 10px 0 0;
+    vertical-align: top;
+}
+
+<<<<<<< HEAD
+
+input[type=checkbox].inp_chk_02 {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url(https://image.goodchoice.kr/images/web_v3/ico_chk.png) 0 0 no-repeat;
+    background-size: 24px auto;
+    cursor: pointer;
+}
+
+
+=======
+>>>>>>> 8a9a2b82a05f2d5af071113b28035a8550d83557
+input[type=checkbox].inp_chk_02:checked {
+    background: url(https://image.goodchoice.kr/images/web_v3/ico_chk.png) 0 -24px no-repeat;
+    background-size: 24px auto;
+}
+
+.terms_agree p a {
+    display: inline-block;
+    text-decoration: underline;
+    color: rgba(0,0,0,0.87);
+}
+
+.terms_agree p span {
+    color: rgb(242,17,76);
+}
+
+.layer_fix .btn_link {
+    display: block;
+    width: 100%;
+    height: 56px;
+    margin-top: 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 56px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    background-color: #fafafa;
+}
+
+button span {
+    position: relative;
+}
+
+
+input[type=checkbox].inp_chk_02 {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: url("https://image.goodchoice.kr/images/web_v3/ico_chk.png") 0 0 no-repeat;
+    background-size: 24px auto;
+    cursor: pointer;
+}
+
+<<<<<<< HEAD
+.gra_left_right_red {
+    background: linear-gradient(to right, rgba(255,0,85,1) 1%,rgba(230,34,67,1) 100%);
+}
+
+=======
+>>>>>>> 8a9a2b82a05f2d5af071113b28035a8550d83557

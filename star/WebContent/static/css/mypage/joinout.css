@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family:'yg-jalnan';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family:'inherit';
+	src:
+		url('../../static/css/font/Inheritance.ttf')
+		format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Pretendard', 'yg-jalnan';
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	list-style: none;
+}
+
+.withdraw_popup_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	background: #fff;
+}
+
+.withdraw_popup_container .withdraw_popup {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.withdraw_popup_container .withdraw_popup .withdraw_popup__header {
+	height: 204px;
+	position: fixed;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	min-height: 44px;
+	background: #fff;
+}
+
+.withdraw_popup_container .withdraw_popup .withdraw_popup__header .withdraw_title
+	{
+	bottom: 15px;
+	max-width: 384px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.withdraw_popup_container .withdraw_popup .withdraw_popup__header .withdraw_title
+	{
+	font-size: 24px;
+	margin-top: 2px;
+	font-weight: 600;
+}
+
+.withdraw_popup_container .withdraw_popup .withdraw_popup__header .withdraw_title svg
+	{
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+}
+
+.withdraw_popup__content {
+	top: 204px;
+	width: 384px;
+	position: absolute;
+}
+
+.withdraw-survey-container {
+	padding: 0;
+	margin-bottom: 144px;
+}
+
+.withdraw-survey-container .withdraw-survey-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 48px 0 40px;
+	font-family: "yg-jalnan" !important;
+	color: rgba(0, 0, 0, .8);
+	line-height: 30px;
+	font-size: 24px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, .8);
+}
+
+.withdraw-survey-container .withdraw-survey-title .emphasis {
+	display: inline;
+	color: #eb4242;
+}
+
+.withdraw-survey-container .radio-list {
+	color: rgba(0, 0, 0, .8);
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.withdraw-survey-container .radio-list__item .select-item-area {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 48px;
+	cursor: pointer;
+}
+
+.withdraw-survey-container .bottom-section .button-area {
+	display: flex;
+}
+
+.paragraph_size_m {
+	margin-bottom: 48px;
+	padding-left: 0;
+	list-style: none;
+	margin-top: 13px;
+}
+
+.paragraph_list {
+	position: relative;
+	margin-bottom: 9px;
+	padding-left: 16px;
+	color: rgba(0, 0, 0, .56);
+	line-height: 1.53;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.paragraph_list:before {
+	position: absolute;
+	display: block;
+	content: "";
+	width: 3px;
+	height: 3px;
+	background-color: #3f578f;
+	top: 9px;
+	left: 3px;
+	border-radius: 50%;
+}
+
+.paragraph_list b {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.bottom-section .checkbox-area {
+	display: flex;
+	align-items: center;
+	height: 36px;
+}
+
+.bottom-section .checkbox-area .checkbox {
+	cursor: pointer;
+}
+
+.bottom-section .checkbox-area__text {
+	margin-top: 2px;
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.bottom-section .button {
+	    color: rgba(0,0,0,.16);
+    background-color: #fafafa;
+    cursor: pointer;
+    margin: 20px 0;
+    width: 100%;
+    height: 56px;
+    padding: 17px 0;
+        text-align: center;
+            border: none;
+    border-radius: 10px;
+    outline: 0;
+        font-size: 18px;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.lastinput {
+	width: 15px;
+	height: 15px;
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user">
+ 
+<insert id="insert" parameterType="userVO">
+INSERT INTO star.tbl_user
+(user_id, user_password, user_name, user_address, user_phonenumber, user_age, user_gender, user_status)
+VALUES(#{userId}, #{userPassword}, #{userName},#{userAddress},#{userPhonenumber}, 0, #{userGender}, 0);
+</insert>
+
+<update id="resetPW">
+update tbl_user
+set user_password = #{userPassword}
+where user_id = #{userId}
+</update>
+
+<select id="select" resultType="long">
+	select user_number from tbl_user
+	where user_id=#{userId}
+</select>
+
+<select id="getcountid" resultType="_int">
+	select count(user_id) from tbl_user
+	where user_id = #{userId}
+</select>
+
+<select id="findPW" resultType="String">
+	select user_id from tbl_user
+	where user_id = #{userId}
+</select>
+
+
+<select id="login" resultType="long">
+	select user_number from tbl_user
+	where user_id = #{userId} and user_password = #{userPassword}
+</select>
+	
+	
+
+	
+	<select id="selectSitter" resultType="UserVO">
+		select user_name from tbl_user 
+		where user_id = #{userId}
+	</select>
+	
+	<select id="selectSitterdetail" resultType="UserVO">
+		select user_name, user_content, user_age, user_gender, user_address, user_star, user_phonenumber
+		from tbl_user
+		where user_title is not null and user_content is not null and user_number = ${userNumber}
+	</select>
+	
+	<select id="selectAllSitter" resultType="UserVO">
+		select user_name, user_star, user_age, user_gender, user_address, user_number
+		from tbl_user
+		where user_title is not null and user_content is not null 
+		<if test="keyword != null">
+			and user_address like concat('%', #{keyword}, '%')
+		</if>
+	</select>
+
+
+	<select id="selectCurrentSitters" resultType="UserVO">
+	select user_number,user_id,user_password,user_name,user_address,user_phonenumber,user_age,user_gender,user_status,user_title,user_content,user_star
+
+	from tbl_user u
+	where u.user_title is not null
+	order by u.user_number desc
+	</select>
+
+
+	<update id="updateName">
+		update tbl_user
+		set user_name = #{userName}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updateAddress">
+		update tbl_user
+		set user_address = #{userAddress}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updatePhoneNumber">
+		update tbl_user
+		set user_phonenumber = #{userPhoneNumber}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updateAge">
+		update tbl_user
+		set user_age = #{userAge}
+		where user_number = #{userNumber}
+	</update>
+	<update id="updateGender">
+		update tbl_user
+		set user_gender= #{userGender}
+		where user_number = #{userNumber}
+	</update>
+	<select id="selectinfo" parameterType="userVO" resultType ="userVO">
+		select user_number, user_name, user_address, user_phonenumber, user_age, user_gender from tbl_user where user_number=#{userNumber}
+	</select>
+	<select id="selectpetSitterForm" parameterType="userVO" resultType ="userVO">
+		select user_title, user_content from tbl_user where user_number=#{userNumber}
+	</select>
+	<update id="petSitterFormOk">
+		update tbl_user
+		set user_title = #{userTitle} , user_content = #{userContent}
+		where user_number = #{userNumber}
+	</update>
+
+</mapper>
+

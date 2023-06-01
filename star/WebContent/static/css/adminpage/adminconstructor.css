@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'GangwonEduAll';
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://static.goodchoice.kr/fonts/gangwon/GangwonEduAllLight.woff2") format("woff2"), url("https://static.goodchoice.kr/fonts/gangwon/GangwonEduAllLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GangwonEduAll';
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://static.goodchoice.kr/fonts/gangwon/GangwonEduAllBold.woff2") format("woff2"), url("https://static.goodchoice.kr/fonts/gangwon/GangwonEduAllBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 800;
+  font-display: block;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-ExtraBold.woff") format("woff"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 700;
+  font-display: block;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Bold.woff") format("woff"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 600;
+  font-display: block;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-SemiBold.woff") format("woff"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Medium.woff2") format("woff2"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Regular.woff2") format("woff2"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 300;
+  font-display: block;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Light.woff") format("woff"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 200;
+  font-display: block;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-ExtraLight.woff") format("woff"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  font-weight: 100;
+  font-display: block;
+  src: url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Thin.woff") format("woff"), url("https://static.goodchoice.kr/fonts/pretendard/Pretendard-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Campton';
+  font-weight: 500;
+  font-display: swap;
+  src: local('Campton Medium'), url('https://static.goodchoice.kr/fonts/campton/Campton-Medium.woff2') format('woff2'), url('https://static.goodchoice.kr/fonts/campton/Campton-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Campton';
+  font-weight: 600;
+  font-display: swap;
+  src: local('Campton SemiBold'), url('https://static.goodchoice.kr/fonts/campton/Campton-SemiBold.woff2') format('woff2'), url('https://static.goodchoice.kr/fonts/campton/Campton-SemiBold.woff') format('woff');
+}
+
+*{
+	list-style: none;
+	margin:0;
+    padding: 0 ;
+   	text-decoration: none !important;
+    box-sizing: border-box !important ;
+}  
+
+/* 메인영역 */
+html{
+	    font: normal 400 16px 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+	height: 100% ;
+background-color: rgb(230, 230, 230) !important;
+}
+body{
+height: 100%;
+background-color: rgb(230, 230, 230) !important;
+line-height:1.0 !important;
+}
+body main{
+	display: flex;
+    height: 100%;
+}
+main nav{
+	width: 10%;
+	background-color: rgb(77,77,77);
+    color: white;
+    min-width:150px;
+    position:fixed;
+    height:100%;
+}
+main nav p{
+    margin: 30px 0 3px 3px;
+    font-size: 12px;
+    border-bottom: 1px solid gray;
+}
+.menubar{
+    padding-left: 0;
+}
+body main .mainadminpage{
+width: 90%;
+margin-left:10%;
+}
+.btns{
+    padding: 10px;
+    width: 100% !important;
+    background-color: inherit;
+    border:none ;
+    border-bottom:1px solid gray ;
+    cursor: pointer;
+    color: white;
+    text-align: start;
+    font-weight: 700;
+}
+label.buttons{
+	width:100%;
+	
+}
+a#gomain{
+    color: white;
+}
+.selected{
+	background-color: rgb(222, 228, 227) !important;
+    border: none !important;
+    color: rgb(77,77,77) !important;
+}
+div.title{
+	background-color:white;
+}
+.delete{
+	background-color:white;
+	border:1px solid gray;
+	border-radius:20px;
+	padding:10px
+}
+.summernote{
+	resize:none;
+	width:100%;
+	height:180px;
+}

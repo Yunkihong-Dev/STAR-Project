@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="review">
+
+	<!-- 메인화면 리뷰 가져오기-->
+	<select id="selectMainReviews" resultType="ReviewVO">
+	select review_number, review_comment, review_date, review_updatedate, review_star, use_number
+	from tbl_review r
+	order by r.review_updatedate desc
+	</select>
+	
+
+   <!-- 전체목록 -->
+   <select id="selectAll" resultType="reviewDTO">
+      select review_number, review_comment, review_date, review_updatedate, review_star, a.* from
+      tbl_review r join
+      (select u1.user_name, u2.* from tbl_use u2 join tbl_user u1 on u1.user_number
+      = u2.user_number) a on r.use_number = a.use_number where user_number = #{userNumber} limit #{offset},
+      #{rowCount}
+   </select>
+
+   <!-- 총개수 -->
+   <select id="getTotal" resultType="_int">
+      select count(review_number)
+      from tbl_review
+   </select>
+   
+   <!-- 리뷰 삭제 -->
+   <delete id="delete">
+      delete from tbl_review where review_number = #{reviewNumber}
+   </delete>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

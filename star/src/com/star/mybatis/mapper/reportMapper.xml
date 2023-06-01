@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="report">
+
+	<!-- 전체목록 -->
+	<select id="selectAll" resultType="reportDTO">
+		select
+		report_id,
+		report_title,
+		report_content,
+		a.*
+		from
+		tbl_report r
+		join
+		(
+		select
+		u1.user_name,
+		u2.*
+		from
+		tbl_use u2
+		join tbl_user u1 on
+		u1.user_number
+		= u2.user_number) a on
+		r.use_number = a.use_number where
+		r.user_number = #{userNumber} limit #{offset},
+		#{rowCount} 
+	</select>
+
+	<!-- 총개수 -->
+	<select id="getTotal" resultType="_int">
+		select count(report_number)
+		from tbl_report
+	</select>
+
+	<!-- 리뷰 삭제 -->
+	<delete id="delete">
+		delete from tbl_report where report_id = #{reportId}
+	</delete>
+   <!-- 전체목록 -->
+  
+
+   <!-- 총개수 -->
+
+   <!-- 리뷰 삭제 -->
+  
+	<select id="selectReport">
+		select report_id, use_number, user_name, report_title, 
+	</select>
+	
+	<select id="selectReportDetailAdmin" resultType="reportDTO">
+		select report_id, s.use_number, user_name, report_title, user_id, report_content
+		from tbl_user u left join tbl_report r
+		on u.user_number = r.user_number join tbl_use s on u.user_number = s.use_number 
+		and report_id = ${reportId}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

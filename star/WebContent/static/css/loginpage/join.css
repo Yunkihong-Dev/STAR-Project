@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+* {
+    outline: 0;
+}
+html, body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    -webkit-text-size-adjust: none;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+a, input, button, div, li, textarea, form, label, select {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+textarea, button, input, select {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+label {
+    cursor: pointer;
+}
+button {
+    padding: 0;
+    cursor: pointer;
+}
+button span {
+    position: relative;
+}
+
+.layer_fix {
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 400;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    background: #fff;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(0,0,0,0.87);
+}
+
+.layer_fix.fix_disable {
+    overflow: auto;
+    position: relative;
+    touch-action: auto;
+}
+
+.layer_fix section {
+    width: 336px;
+    margin: 100px auto 0 auto;
+}
+
+.layer_fix .fix_title {
+    position: relative;
+    display: block !important;
+    margin-bottom: 16px;
+    background: #fff;
+    border-bottom: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    width: 100%;
+    height: 44px;font-size: 18px;
+    line-height: 44px;
+    text-align: center;
+}
+
+.fix_title h1.page_head {
+    text-align: center;
+}
+
+.fix_title h1.page_head a {
+    display: inline-block;
+    width: 112px;
+    height: 44px;
+    background: url(//image.goodchoice.kr/images/web_v3/h1_mobile.png) 50% 50% no-repeat;
+    background-size: 112px 23px;
+    text-indent: -9999px;
+}
+
+.layer_fix .sub_title {
+    display: block;
+    margin: 30px 0 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.join b {
+    display: block;
+    margin-bottom: 9px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.56);
+}
+
+.join > div {
+    margin-bottom: 38px;
+}
+
+.inp_type_2 {
+    position: relative;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.inp_type_2 input {
+    position: relative;
+    top: 13px;
+    width: 100%;
+    height: 20px;
+    padding: 0;
+    border: none;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.validate_msg_label {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 13px;
+    color: #388e3c;
+}
+
+.join .btn-add {
+    margin-right: 100px;
+}
+
+label.error {
+    display: none !important;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.default_label_txt {
+    position: absolute;
+    top: 54px;
+    padding-left: 16px;
+    font-size: 15px;
+    color: rgba(0,0,0,0.32) !important;
+}
+
+.default_label_txt.icon-ic_downwards_arrow {
+    left: 16px;
+}
+
+.inp_type_2 .icon-ic_downwards_arrow::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    content: "\e906";
+}
+
+.pop_login button {
+    border: none;
+}
+
+.join .btn-add .btn_etc {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 93px;
+    height: 48px;
+    border-radius: 6px;
+    background: #ebebeb;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.56);
+}
+
+.layer_fix .btn_link {
+    display: block;
+    width: 100%;
+    height: 56px;
+    margin-top: 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 56px;
+    background-color: rgb(250, 250, 250);
+    color: rgba(0, 0, 0, 0.16);
+    text-align: center;
+    border: none;
+}
+
+.join .gra_left_right_red {
+    margin-bottom: 50px;
+}
+
+.btn_user_submit {
+    background: #fafafa;
+    color: rgba(0,0,0,0.16);
+}
+
+input:focus {
+    outline: 1px solid red;
+}

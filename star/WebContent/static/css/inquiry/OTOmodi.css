@@ -1,0 +1,743 @@
+@charset "UTF-8";
+
+* {
+    outline: 0;
+}
+
+body {
+	margin: 0;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+}
+
+div, header, section, h1, button, ul, span, .sub_top_wrap {
+	display: block;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.wrap, sub_top_wrap {
+    width: 100%;
+    background: #fff;
+}
+
+.wrap.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 72px;
+  	transition: 0.3s;
+   	background-color: #388e3c;
+   	z-index: 9999;
+}
+
+header section {
+	position: relative;
+	width: 1024px;
+	height: 64px;
+	background: none;
+	margin: 0 auto;
+}
+
+header section h1 {
+    position: absolute;
+    top: 7px;
+    left: 32px;
+    width: 96px;
+    height: 20px;
+    margin: 0;
+    /* background: url(//image.goodchoice.kr/images/web_v3/h1_logo_pc_w.png) 0 0 no-repeat; */
+    background-size: 96px auto;
+}
+
+header section h1 a {
+   	display: block;
+   	color :#EBEBEB;
+   	font-size : 18px;
+}
+
+.gnb_pc {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 31px;
+    width: auto;
+    text-align: right;
+}
+
+.gnb_pc li a {
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 0;
+}
+
+.gnb_pc li {
+	display: inline-block;
+	position: relative;
+	min-width: 53px;
+	min-height: 35px;
+	margin-left: 30px;
+	vertical-align: top;
+}
+
+header section .btn_srch {
+	position: absolute;
+	border: none;
+	top: 22px;
+	right: 396px;
+	z-index: 10;
+	width: 30px;
+	height: 30px;
+	background: url(//image.goodchoice.kr/images/web_v3/ico_srch_2.png) 50%
+		50% no-repeat;
+	background-size: 24px auto;
+}
+
+.gnb_pc {
+	display: inline-block;
+	position: absolute;
+	top: 27px;
+	right: 31px;
+}
+
+.wrap .show {
+	opacity: 1;
+}
+
+.wrap {
+	width: 100%;
+	background: #fff;
+}
+
+button {
+	writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-shadow: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 0;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+header section .btn_menu {
+	display: none;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: url(//image.goodchoice.kr/images/web_v3/ico_menu.png) 50% 50% no-repeat;
+    background-size: 24px auto;
+    text-indent: -9999px;
+}
+
+header section .btn_srch {
+    position: absolute;
+    border: none;
+    text-indent: -9999px;
+    top: 22px;
+    right: 396px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    background: url(//image.goodchoice.kr/images/web_v3/ico_srch_2.png) 50% 50% no-repeat;
+    background-size: 24px auto;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    list-style: none;
+}
+
+.gnb_pc {
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    right: 31px;
+    width: auto;
+    text-align: right;
+}
+
+.gnb_pc li {
+    display: inline-block;
+    position: relative;
+    min-width: 53px;
+    min-height: 35px;
+    margin-left: 30px;
+    vertical-align: top;
+}
+
+.gnb_pc li button {
+    border: none;
+    padding: 0;
+    background: none;
+    font-size: 18px;
+    line-height: 1;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 0;
+}
+
+button span {
+    position: relative;
+}
+
+.gnb_pc li a {
+    text-decoration: none;
+}
+
+.gnb_pc li ul {
+	position: absolute;
+	border-radius: 5px;
+    padding: 32px;
+    background: #fff;
+    text-align: left;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+}
+
+.gnb_pc .list_03 {
+    top: 30px;
+    left: -65px;
+    width: 184px;
+}
+
+.gnb_pc li ul li {
+    display: block;
+    min-width: auto;
+    min-height: auto;
+    margin: 0 0 14px 0;
+}
+
+.gnb_pc li ul li a {
+	text-decoration: none;
+	letter-spacing: 0;
+	overflow: visible !important;
+    display: block;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0;
+    font-size: 16px;
+    color: rgba(0,0,0,0.87);
+}
+
+.sub_top_wrap {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 211px;
+    transition: 0.4s;
+    background: #388e3c;
+    z-index: 210;
+}
+
+.sub_top {
+    width: 1024px;
+    height: 211px;
+    margin: 0 auto;
+    padding-top: 72px;
+    border-radius: 0;
+    background: none;
+    position: relative;
+}
+
+.sub_top h2 {
+    display: block;
+    margin: 21px 0 0 31px;
+    font-size: 38px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+#menu {
+  	display: flex;
+  	justify-content: space-between;
+  	background-color: #388e3c ;
+  	/*transition: all 300ms ease;*/
+  
+}
+
+#menu.active {
+    position: fixed;
+  	height: 72px;
+  	display: flex;
+  	justify-content: space-between;
+  	background-color: white;
+  	z-index: 210;
+  	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.1);
+  	
+} 
+
+.bannertext.textactive{
+   	color: #388e3c;
+}
+
+#bannertext.textactive2{
+	color: #388e3c;
+}
+
+#content {
+    overflow: hidden;
+}
+
+.more_wrap {
+    padding-top: 54px;
+    background: #fff;
+}
+
+.sub_wrap {
+    min-height: 390px;
+	width: 1024px !important;
+    margin: 0 auto 0 auto;
+    padding-bottom: 50px;
+}
+
+.sub_wrap nav {
+    display: block;
+    float: left;
+    width: 238px;
+    padding-left: 0;
+}
+
+.sub_wrap nav ul li {
+    margin-bottom: 26px;
+}
+
+.sub_wrap nav ul li a {
+    display: block;
+    font-size: 18px;
+    color: rgba(0,0,0,0.56);
+    text-decoration: none;
+}
+
+.sub_wrap nav ul li a.active {
+    font-size: 18px;
+    font-weight: bold;
+    color: #388e3c;
+}
+
+.sub_wrap .align_rt {
+    float: right;
+    width: 724px;
+    margin-right: 31px;
+}
+
+.inquiry {
+    background: #fff;
+}
+
+.tab {
+	display: block;
+    background: #fff;
+    height: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.tab span.tab_btn {
+    display: inline-block;
+    float: none;
+    position: relative;
+    width: auto;
+    height: 40px;
+    margin-right: 22px;
+    font-size: 18px;
+    line-height: normal;
+    text-align: left;
+    cursor: pointer;
+}
+
+.tab_btn.active {
+    font-weight: bold;
+    color: rgb(242,17,76);
+}
+
+.tab .active:after {
+    bottom: -1px;
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #388e3c;
+}
+
+.tab span.tab_btn a {
+	color : #388e3c;
+	text-decoration: none;
+}
+
+.tab_each {
+    border-top: none;
+	clear: both;
+}
+
+.show_list {
+    margin-bottom: 0;
+    padding: 0 0;
+    background: #fff;
+}
+
+.inquiry .show_list li {
+    border-top: none;
+}
+
+.show_list li:last-child {
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.show_list li .list_que {
+    display: block;
+    position: relative;
+    height: auto;
+    margin-bottom: 0;
+    padding: 38px 24px 35px 0;
+    border-radius: 0;
+    background: #fff;
+    font-size: 18px;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.show_list li a {
+	color: rgba(0,0,0,0.87);
+    box-sizing: border-box;
+}
+
+.show_list li .list_que {
+    display: block;
+    position: relative;
+    height: auto;
+    margin-bottom: 0;
+    padding: 38px 24px 35px 0;
+    border-radius: 0;
+    background: #fff;
+    font-size: 18px;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.show_list li .list_que p {
+    padding-bottom: 7px;
+    overflow: visible;
+    white-space: normal;
+    text-overflow: initial;
+    line-height: normal;
+    word-wrap: break-word;
+}
+
+.show_list p .reply_chk {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    border: 1px solid rgba(0,0,0,0.87);
+    color: rgba(0,0,0,0.87);
+}
+
+.show_list li .list_que span {
+    font-size: 16px;
+    color: rgba(0,0,0,0.38);
+}
+
+.show_list li a span {
+    display: block;
+    position: relative;
+}
+
+.show_list li .list_ans {
+    margin-bottom: 0;
+    padding: 35px 32px 73px 32px;
+    border-radius: 0;
+    background: #fafafa;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.tab_each {
+    border-top: none;
+}
+
+.inquiry .alert_top {
+    padding: 43px 0 0 0;
+    background: #fff;
+	border-bottom: none;
+}
+
+.inquiry .alert_top p {
+    border-radius: 0;
+    background: #fff;
+    padding: 0 0;
+    font-size: 16px;
+    line-height: normal;
+    text-align: left;
+}
+
+.inquiry .alert_top p em {
+    display: inline;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.inquiry section {
+    background: #fff;
+}
+
+.info_wrap {
+    margin-bottom: 0;
+    padding: 39px 0 46px 0;
+}
+
+.inquiry section b {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.56);
+    font-weight: normal;
+}
+
+.inquiry section select {
+    height: 48px;
+    margin-bottom: 46px;
+}
+
+.select_type_2 {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 4px;
+    background: rgb(250,250,250) url(//image.goodchoice.kr/images/web_v3/ico_arr_down_4.png) right 10px top 50% no-repeat;
+    -webkit-appearance:none;
+	appearance: none;
+    background-size: 18px auto;
+    font-size: 16px;
+    color: rgba(0,0,0,0.56);
+    cursor: pointer;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.inquiry .memberId-block {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.inquiry .title-block {
+    margin-top: 45px;
+}
+
+.inquiry section b {
+	display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.56);
+    font-weight: normal;
+}
+
+.inp_wrap {
+	position: relative;
+    border: 1px solid rgba(0,0,0,0.08);
+    padding: 8px 14px 8px 16px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.inp_wrap input {
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 18px;
+    color: rgba(0,0,0,0.56);
+    line-height: 1;
+}
+
+.reset_val {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    right: 14px;
+    width: 20px;
+    border: none;
+    background: url(//image.goodchoice.kr/images/web_v3/ico_reset.png) 50% 50% no-repeat;
+    background-size: 20px auto;
+    text-indent: -9999px;
+}
+
+.inquiry .email-block {
+	position: relative;
+    margin-top: 45px;
+}
+
+.text_wrap div {
+    position: relative;
+}
+
+.inquiry section textarea {
+    width: 724px;
+    height: 274px;
+    padding: 33px 32px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 29px;
+    border: 1px solid rgba(0,0,0,0.08);
+    color: rgba(0,0,0,0.56);
+    resize: none;
+    box-sizing: border-box;
+}
+
+.placeholder_txt {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 33px 32px;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgba(0,0,0,0.38);
+}
+
+.placeholder_txt li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+
+.btn_wrap {
+    border-top: none;
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+
+.btn_wrap button {
+    width: 144px;
+    height: 48px;
+}
+
+.btn_blue_fill {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: top;
+	background: #388e3c;
+}
+
+footer {
+    overflow: hidden;
+    clear: both;
+    position: relative;
+    margin-top: 120px;
+    padding: 63px 31px 40px 31px !important;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    background: rgb(245,245,245);
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(0,0,0,0.38);
+}
+
+footer a {
+    color: rgba(0,0,0,0.38);
+}
+
+footer .align {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+footer .link {
+    overflow: hidden;
+}
+
+footer .link li {
+    float: left;
+    margin-bottom: 5px;
+    line-height: normal;
+}
+
+footer .link li a {
+    display: inline-block;
+}
+
+footer .link li span {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    width: 24px;
+    font-size: 11px;
+    text-align: center;
+}
+
+footer p {
+    clear: both;
+    padding: 37px 0 24px 0;
+}
+
+footer p b, footer p span {
+    display: inline-block;
+}
+
+footer p b {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer address {
+	display: inline-block;
+    line-height: 22px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+footer address span {
+    display: block;
+    padding-bottom: 7px;
+}
+
+footer address .order {
+    display: block;
+    padding: 6px 0;
+}

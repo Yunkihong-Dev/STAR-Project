@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+ * {
+    outline: 0;
+}
+
+html, body {
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+    -webkit-text-size-adjust: none;
+}
+a, input, button, div, li, textarea, form, label, select {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* form {
+    display: block;
+} */
+textarea, button, input, select {
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', '맑은고딕', 'Malgun Gothic', sans-serif;
+}
+/* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+/* div {
+    display: block;
+} */
+label {
+    cursor: pointer;
+}
+button {
+    padding: 0;
+    cursor: pointer;
+}
+button span {
+    position: relative;
+}
+element.style {
+    background-color: rgb(250, 250, 250);
+    color: rgba(0, 0, 0, 0.16);
+    border: none;
+}
+
+.layer_fix {
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 400;
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    background: #fff;
+    font-size: 15px;
+    line-height: 26px;
+    color: rgba(0,0,0,0.87);
+    touch-action: none;
+}
+
+.layer_fix section {
+    width: 336px;
+    margin: 100px auto 0 auto;
+}
+
+.new-style-form .sub_title {
+    height: auto;
+    padding-top: 14px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: rgba(0,0,0,0.87);
+}
+
+.layer_fix .sub_title {
+    display: block;
+    margin: 30px 0 10px 0;
+    text-align: center;
+}
+
+.pop_mem_reserve .txt_top {
+    margin: 12px 0 18px 0;
+    color: rgba(0,0,0,0.56);
+    text-align: center;
+}
+
+.new-style-form .txt_top {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.inp_type_1 {
+    position: relative;
+    height: 48px;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding: 0px;
+    border: 1px solid rgba(0,0,0,0.26);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ico_pw::after, .ico_pw.inp_focus::after, .ico_pw.inp_error::after {
+    top: 15px;
+    left: 16px;
+}
+
+.ico_pw::after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 15px;
+    background: url(//image.goodchoice.kr/images/web_v3/ico_inp_pw.png) 50% 0 no-repeat;
+    background-size: 14px auto;
+}
+
+.inp_type_1 input {
+    position: relative;
+    top: 11px;
+    width: 80%;
+    height: 24px;
+    font-size: 18px;
+    padding: 0;
+    padding-left: 38px;
+    border: none;
+    vertical-align: top;    
+}
+
+.validate_msg_label {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 12px;
+    color: red;
+}
+
+.pop_login button {
+    border: none;
+}
+
+.reset_val {
+	visibility: hidden;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: url(//image.goodchoice.kr/images/web_v3/ico_reset.png) 50% 50% no-repeat;
+    background-size: 20px auto;
+    text-indent: -9999px;
+}
+
+.new-style-form .btn_link:disabled {
+    background: #fafafa;
+}
+
+.layer_fix .btn_link {
+	display: block;
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.btn_link {
+    margin-top: 30px !important;
+}
