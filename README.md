@@ -4,7 +4,7 @@
 
 
 <h2>1. 제작 배경</h2>
-<img src="[https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/567dbafa-2dea-4c6b-ae67-d1d831741df0](https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/eb0a5481-1ac4-4d11-8854-a65da3362624)" style = "width: 80%; height : 480">
+<img src="https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/eb0a5481-1ac4-4d11-8854-a65da3362624" style = "width: 80%; height : 480">
 
 최근 애완동물 유기비율이 급격히 오르고 있다. 수많은 원인중 하나는 바로 애완동물을 기르고 마음에 입양했다가, 막상 입양해보니 기르는게 힘들거나, 주변인의 알러지같은 생각지도 못한 곳에 문제가 있을 수 있다. 이를 막기위해 나온것이 STAR이다. 
 </div>
@@ -39,7 +39,7 @@ STAR는 애완동물이 있는 이에게는 저렴한 비용으로 애완동물�
   
 <h2>5. 담당 업무</h2>
 5-1 프론트엔드<br>
-<img src="[https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/4fa49f4c-5827-4a54-967f-c2d65e5a3570](https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/655b0ac4-a735-45fb-867c-2edf6466b67e)" style = "width: 90%;">
+<img src="https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/655b0ac4-a735-45fb-867c-2edf6466b67e" style = "width: 90%;">
 
 ▶ 관리자페이지
 - 관리자 메인페이지
@@ -51,7 +51,7 @@ STAR는 애완동물이 있는 이에게는 저렴한 비용으로 애완동물�
 
 <br>
 5-2 백엔드<br>
-<img src=" https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/40204c33-ed58-403b-ac0a-47fb6ad6579d" style = "width: 90%;">
+<img src="https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/40204c33-ed58-403b-ac0a-47fb6ad6579d" style = "width: 90%;">
 
 
 ▶ 마이페이지
