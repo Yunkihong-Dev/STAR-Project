@@ -39,9 +39,10 @@ STAR는 애완동물이 있는 이에게는 저렴한 비용으로 애완동물�
   
 <h2>5. 담당 업무</h2>
 5-1 프론트엔드<br>
-<img src="https://github.com/Yunkihong-Dev/Tikkeul-Project/assets/81303136/655b0ac4-a735-45fb-867c-2edf6466b67e" style = "width: 90%;">
+<img src="https://github.com/Yunkihong-Dev/STAR-Project/assets/81303136/75b035a7-e06b-4eb1-94a9-40b0f7d55ec0" style = "width: 90%;">
 
 ▶ 관리자페이지
+
 - 관리자 메인페이지
 - 회원목록
 - 문의글 목록
